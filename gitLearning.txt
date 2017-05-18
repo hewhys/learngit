@@ -6,4 +6,9 @@ git config --global user.name "Hewhys"//这里要填用户名
 git init//在当前目录下创建工作区
 
 //提交
-git add gitLearning.txt
+git add gitLearning.txt//添加文件
+git commit --message "我的git学习开始啦"
+
+//其它功能
+git status//查看状态
+git diff gitLearning.txt//查看改动
