@@ -1,0 +1,9 @@
+//第一次配置
+git config --global user.email "hewhys@gmail.com"//这里要填邮箱
+git config --global user.name "Hewhys"//这里要填用户名
+
+//创建工作区
+git init//在当前目录下创建工作区
+
+//提交
+git add gitLearning.txt
