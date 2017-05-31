@@ -12,3 +12,9 @@ git commit --message "我的git学习开始啦"
 //其它功能
 git status//查看状态
 git diff gitLearning.txt//查看改动
+git log//查看日志记录
+
+//克隆版本库
+git clone /e/工作区/gitLearing /e/工作区/gitLearing/clone //克隆指令 跟源与目标
+
+//修改主线内容并提交
