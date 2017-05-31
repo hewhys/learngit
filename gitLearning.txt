@@ -20,3 +20,13 @@ git clone /e/工作区/gitLearing /e/工作区/gitLearing-clone //克隆指令 �
 //修改主线内容并提交
 git add gitLearning.txt
 git commit --message "在原有主线上修改"
+
+//图形化log
+git log --graph
+
+//使用pull指令取回修改
+git pull    //不带参数就是支线从主线拿回修改
+git pull /e/工作区/gitLearing-clone master//跟目标与源
+
+//创建裸版本库
+git clone --bare /e/工作区/gitLearing /e/工作区/gitLearing-clone-bare
