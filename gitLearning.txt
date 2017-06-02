@@ -21,9 +21,13 @@ git clone /e/工作区/gitLearing /e/工作区/gitLearing-clone //克隆指令 �
 git add gitLearning.txt
 git commit --message "在原有主线上修改"  //还可以用-m "在原有主线上修改"
 
-//图形化log
+//log参数
 git log --graph
-git log -3 //只显示最近三次提交
+git log -3 //只显示最近三次提交，可以加在其它参数之后哦
+git log --format=fuller //显示详细的信息
+git log --oneline //显示概述信息
+git log --stat //用来显示被修改的文件
+git log --shortstat  //显示修改文件的数目、以及新增和删除的文件的数目
 
 //使用pull指令取回修改
 git pull    //不带参数就是支线从主线拿回修改
