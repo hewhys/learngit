@@ -85,7 +85,17 @@ git branch <name>
 git checkout <name>
 
 //合并某分支到当前分支
-git merge <name>
+git merge <name>  //合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并
 
 //删除分支
 git branch -d <name>
+
+//新建标签
+git tag <name> //默认为HEAD，也可以指定一个commit id
+git tag v0.9 6224937
+
+//查看所有标签
+git tag
+
+//指定标签信息
+git tag -a <tagname> -m "blablabla..."
