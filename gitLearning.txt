@@ -31,10 +31,10 @@ git log --shortstat  //显示修改文件的数目、以及新增和删除的文
 
 //使用pull指令取回修改
 git pull    //不带参数就是支线从主线拿回修改
-git pull /e/工作区/gitLearing-clone master//跟目标与源
+git pull /e/工作区/gitLearning-clone master//跟目标与源
 
 //创建裸版本库
-git clone --bare /e/工作区/gitLearing /e/工作区/gitLearing-clone-bare
+git clone --bare /e/工作区/gitLearning /e/工作区/gitLearning-clone-bare
 
 // 通常可以用add --all来注册所有修改
 git add --all
@@ -58,3 +58,19 @@ git stash pop stash@{1}
 以方括号“[]”包含单个字符的匹配列表；
 
 以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；
+
+//关联远程库
+git remote add origin git@github.com:hewhys/helloWorld.git
+git remote add origin https://github.com/hewhys/learngit.git
+
+//取消远程库关联
+git remote remove origin
+
+//第一次推送到远程版本库
+git push -u origin master
+
+//推送新版本到github
+git push origin master
+
+//添加秘钥
+ssh-keygen -t rsa -C "hewhys@gmail.com"
